@@ -3,3 +3,4 @@ pandas<=1.0.5
 jinjasql<=0.1.8
 pyodbc<=4.0.30
 plotly==4.14.3
+pycaret==2.3.1
