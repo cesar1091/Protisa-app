@@ -1,5 +1,5 @@
 streamlit<=0.71.0
-pandas<=1.0.5
+pandas==1.2.2
 jinjasql<=0.1.8
 pyodbc<=4.0.30
 plotly==4.14.3
