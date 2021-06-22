@@ -3,6 +3,7 @@ import numpy as np
 import streamlit as st
 from plotly.subplots import make_subplots
 import datetime
+import xgboost
 from pycaret.regression import load_model, predict_model
 
 def cumsell(df,level):
