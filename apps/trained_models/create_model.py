@@ -40,7 +40,7 @@ def model_pycaret(dataset,target,level):
         df.dropna(inplace=True)
         df, var_num = lag_sells(df,target)
         #initialize setup from pycaret.regression
-        s = setup(df, target = target, train_size = 0.7, data_split_shuffle = True,numeric_features = var_num,  categorical_features = ['Weekday'],numeric_imputation="mean",categorical_imputation="constant",silent = True, verbose = False, remove_outliers = True, session_id = 123)
+        s = setup(df, target = target, train_size = 0.7, data_split_shuffle = True,numeric_features = var_num,  categorical_features = ['Weekday'],numeric_imputation="mean",categorical_imputation="constant",silent = True, verbose = False, remove_outliers = True, pca = True, pca_components = 0.85,session_id = 123)
         # compare all models and select best one based on MAE
         xgboost = create_model('xgboost', max_depth = 10)
         tuned = tune_model(xgboost,optimize = 'RMSE')  

@@ -3,7 +3,7 @@ import pyodbc
 import numpy as np
 
 
-sql_conn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER=51.222.82.146;DATABASE=STRATEGIO_OLAP_PROTISA;UID=Cesar_VS;PWD=@tenasmf626;Trusted_Connection=no')
+sql_conn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER=51.222.82.146;DATABASE=STRATEGIO_OLAP_PROTISA;UID=Cesar_VS;PWD=clea@tenasmf626;Trusted_Connection=no')
 
 #Cierre de ventas(soles)
 
